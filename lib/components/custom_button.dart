@@ -13,10 +13,10 @@ class CustomButton extends StatefulWidget {
   final String text; // Текст
   final double width; // Ширина кнопки
   final double height; // Высота кнопки
-  final VoidCallback onTap; // Действие при нажатии
+  final VoidCallback? onTap; // Действие при нажатии
   final bool isDisabled; // Отключена ли кнопка
 
-  const CustomButton({super.key, required this.fillcolor, required this.bordercolor, required this.textcolor, required this.text, required this.width, required this.height, required this.onTap, this.isDisabled = false});
+  const CustomButton({super.key, required this.fillcolor, required this.bordercolor, required this.textcolor, required this.text, required this.width, required this.height, this.onTap, this.isDisabled = false});
 
   @override
   State<CustomButton> createState() => _CustomButtonState();
@@ -39,7 +39,7 @@ class _CustomButtonState extends State<CustomButton> {
             ? null
             : () {
                 Logging().info('CustomButton', 'Нажатие', 'Произошло нажатие на кнопку');
-                widget.onTap.call();
+                widget.onTap?.call();
               },
         style: ElevatedButton.styleFrom(
           backgroundColor: widget.fillcolor,
