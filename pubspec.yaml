@@ -1,0 +1,47 @@
+name: uikit_2
+description: "UIKit"
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.11.5
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  logger: ^2.8.0
+  vize: ^1.0.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: lib/fonts/Manrope-ExtraLight.ttf
+          weight: 200
+        - asset: lib/fonts/Manrope-Light.ttf
+          weight: 300
+        - asset: lib/fonts/Manrope-Regular.ttf
+          weight: 400
+        - asset: lib/fonts/Manrope-Medium.ttf
+          weight: 500
+        - asset: lib/fonts/Manrope-SemiBold.ttf
+          weight: 600
+        - asset: lib/fonts/Manrope-Bold.ttf
+          weight: 700
+        - asset: lib/fonts/Manrope-ExtraBold.ttf
+          weight: 800
+
+    - family: Playwrite
+      fonts:
+        - asset: lib/fonts/PlaywriteGBJGuides-Regular.ttf
+          weight: 400
