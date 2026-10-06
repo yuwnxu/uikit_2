@@ -47,6 +47,8 @@ class _CustomButtonState extends State<CustomButton> {
             borderRadius: BorderRadiusGeometry.circular(8.r),
             side: BorderSide(color: widget.bordercolor, width: 2),
           ),
+          disabledBackgroundColor: widget.fillcolor,
+          disabledForegroundColor: widget.textcolor,
         ),
         child: Text(widget.text, style: bodyMedium.copyWith(color: widget.textcolor)),
       ),
