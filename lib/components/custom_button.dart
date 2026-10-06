@@ -30,6 +30,12 @@ class _CustomButtonState extends State<CustomButton> {
   }
 
   @override
+  void dispose() {
+    Logging().info('CustomButton', 'Уничтожение', 'Кнопка уничтожена');
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: widget.width,
