@@ -11,6 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   logger: ^2.8.0
+  modal_bottom_sheet: ^3.0.0
   vize: ^1.0.4
 
 dev_dependencies:
