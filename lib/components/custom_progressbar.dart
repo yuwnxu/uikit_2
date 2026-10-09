@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:vize/vize.dart';
 import 'package:uikit_2/color.dart';
 import 'package:uikit_2/typography.dart';
-
 import '../logg.dart';
 
 // Прогресс-бар с шагами
