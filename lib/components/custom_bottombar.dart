@@ -35,13 +35,14 @@ class _CustomBottombarState extends State<CustomBottombar> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: po(b: 15.5, t: 15.5, l: 72.11, r: 43.89),
+      padding: po(b: 15.5, t: 15.5, l: 48.11, r: 43.89),
       decoration: BoxDecoration(
         color: white,
         borderRadius: BorderRadius.vertical(top: Radius.circular(12.r)),
         boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), blurRadius: 12, offset: Offset(0, -4))],
       ),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           GestureDetector(
             onTap: () {
@@ -60,7 +61,7 @@ class _CustomBottombarState extends State<CustomBottombar> {
               ),
             ),
           ),
-          SizedBox(width: 32.fw),
+          Spacer(),
           GestureDetector(
             onTap: () {
               Logging().info('CustomBottombar', 'Нажатие', 'Произошло нажатие на кнопку');
