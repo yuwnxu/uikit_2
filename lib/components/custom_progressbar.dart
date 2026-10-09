@@ -36,7 +36,7 @@ class _CustomProgressBarState extends State<CustomProgressBar> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('$widget.text (Шаг $widget.currentStep из 3)', style: bodySmall.copyWith(color: black)),
+        Text('${widget.text} (Шаг ${widget.currentStep} из 3)', style: bodySmall.copyWith(color: black)),
         SizedBox(height: 8.fh),
         Row(
           children: [

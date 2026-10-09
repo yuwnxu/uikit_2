@@ -52,7 +52,7 @@ class _CustomNavbarState extends State<CustomNavbar> {
             label: widget.text1,
             isActive: widget.currentPage == 0,
             onTap: () {
-              Logging().info('CustomNavbar', 'Вкладка', 'Открыта $widget.text1');
+              Logging().info('CustomNavbar', 'Вкладка', 'Открыта ${widget.text1}');
               widget.onTap(0);
             },
           ),
@@ -61,7 +61,7 @@ class _CustomNavbarState extends State<CustomNavbar> {
             label: widget.text2,
             isActive: widget.currentPage == 1,
             onTap: () {
-              Logging().info('CustomNavbar', 'Вкладка', 'Открыта $widget.text2');
+              Logging().info('CustomNavbar', 'Вкладка', 'Открыта ${widget.text2}');
               widget.onTap(1);
             },
           ),
@@ -70,7 +70,7 @@ class _CustomNavbarState extends State<CustomNavbar> {
             label: widget.text3,
             isActive: widget.currentPage == 2,
             onTap: () {
-              Logging().info('CustomNavbar', 'Вкладка', 'Открыта $widget.text3');
+              Logging().info('CustomNavbar', 'Вкладка', 'Открыта ${widget.text3}');
               widget.onTap(2);
             },
           ),
