@@ -59,7 +59,7 @@ class _CustomCheckboxState extends State<CustomCheckbox> {
       showicon = true;
     } else {
       // unchecked
-      fillcolor = white;
+      fillcolor = darkenWhite;
       bordercolor = secondary;
       labelcolor = black;
       showicon = false;
