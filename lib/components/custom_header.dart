@@ -24,6 +24,18 @@ class CustomHeader extends StatefulWidget {
 
 class _CustomHeaderState extends State<CustomHeader> {
   @override
+  void initState() {
+    super.initState();
+    Logging().info('CustomHeader', 'Создание', 'Главная верхняя панель создана');
+  }
+
+  @override
+  void dispose() {
+    Logging().info('CustomHeader', 'Уничтожение', 'Верхняя панель уничтожена');
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
