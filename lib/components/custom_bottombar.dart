@@ -48,12 +48,16 @@ class _CustomBottombarState extends State<CustomBottombar> {
               Logging().info('CustomBottombar', 'Нажатие', 'Произошло нажатие на кнопку');
               widget.onTap1();
             },
-            behavior: HitTestBehavior.opaque,
-            child: Column(
-              children: [
-                Image.asset('assets/scan.png', width: 18.fw, height: 18.fh),
-                Text('Сохранить', style: bodySmall.copyWith(color: secondary)),
-              ],
+            child: Container(
+              padding: ps(h: 24.fw, v: 4.fh),
+              decoration: BoxDecoration(color: white),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset('assets/scan.png', width: 18.fw, height: 18.fh),
+                  Text('Сохранить', style: bodySmall.copyWith(color: secondary)),
+                ],
+              ),
             ),
           ),
           SizedBox(width: 32.fw),
