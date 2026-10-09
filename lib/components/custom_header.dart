@@ -5,7 +5,7 @@ import 'package:uikit_2/color.dart';
 import 'package:uikit_2/typography.dart';
 
 // Главная верхняя панель
-// Автор создания: 08.10.2026
+// Автор создания: 1
 // Дата создания: 08.10.2026
 
 class CustomHeader extends StatefulWidget {

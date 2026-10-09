@@ -5,7 +5,7 @@ import 'package:uikit_2/color.dart';
 import 'package:uikit_2/typography.dart';
 
 // Универсальная верхняя панель
-// Автор создания: 5
+// Автор создания: 1
 // Дата создания: 08.10.2026
 
 class CustomAppbar extends StatefulWidget {
